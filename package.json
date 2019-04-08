@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build:all":"webpack --config ./build/webpack.publish.js --mode development",
     "dev": "webpack-dev-server --hot --inline --config ./build/webpack.config.js --mode development"
   },
   "author": "liyuan",

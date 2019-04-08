@@ -1,14 +1,14 @@
 <template>
     <div>
         hello
-        <Button></Button>
+        <hui-button></hui-button>
     </div>
 </template>
 <script>
-import {button} from './subgroup/index.js'
+import Button from '../../dist/main.js'
 export default {
     components:{
-        Button:button
+        "hui-button":Button
     }
 }
 </script>
