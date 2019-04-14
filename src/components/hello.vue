@@ -5,7 +5,9 @@
     </div>
 </template>
 <script>
-import Button from '../../dist/main.js'
+import Vue from 'vue'
+import {Button} from '../../lib/index.js'
+// Vue.use(button);
 export default {
     components:{
         "hui-button":Button

@@ -1,10 +1,22 @@
 const path = require("path");
 const components = Object.assign({},require('../components.json'));
+
 module.exports = {
-    entry: path.resolve(__dirname,'../packages/button/index.js'),
+    // entry: path.resolve(__dirname,'../packages/index.js'),
+    entry: components,
+    // output: {
+    //     filename: 'bundle.js',
+    //     path: path.resolve(__dirname,'../lib'),
+    //     library: '[name]', // 指定的就是你使用require时的模块名
+    //     libraryTarget: 'umd', // 指定输出格式
+    //     umdNamedDefine: true 
+    //   },
     output: {
-        path:path.resolve(__dirname,'../dist'),
-        filename: '[name].js'
+        path:path.resolve(__dirname,'../lib'),
+        filename: '[name].js',
+        library: '[name]', // 指定的就是你使用require时的模块名
+        libraryTarget: 'umd', // 指定输出格式
+        umdNamedDefine: true 
     },
     resolve: {
         alias: {
