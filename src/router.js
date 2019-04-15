@@ -1,33 +1,33 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from './components/hello.vue'
-import login from './components/login.vue'
-import forgetPassword from './components/forgetPassword.vue'
-import home from './components/home.vue'
+import index from './components/index.vue'
+import button from './components/button.vue'
+import toast from './components/toast.vue'
+import list from './components/list.vue'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+        path: '/',
+        name: 'index',
+        component: index
     },
     {
-        path: '/login',
-        name: 'login',
-        component: login
-      },
-      {
-        path: '/forgetPassword',
-        name: 'forgetPassword',
-        component: forgetPassword
-      },
-      {
-        path: '/home',
-        name: 'home',
-        component: home
-      }
+      path: '/button',
+      name: 'Button',
+      component: button
+    },
+    {
+        path: '/toast',
+        name: 'Toast',
+        component: toast
+    },
+    {
+        path: '/list',
+        name: 'List',
+        component: list
+    }
   ]
 })
